@@ -1,0 +1,9 @@
+  server {
+        listen       80;
+        server_name  localhost;
+
+        location / {
+            proxy_pass http://ip:9000/;
+            index  index.html index.htm;
+        } # end location
+ } # end server
